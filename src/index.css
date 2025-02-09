@@ -17,7 +17,7 @@
 }
 
 body{
-  /* padding: 2.5rem 0; */
+  padding: 2.5rem 0;
   background-color: hsl(226, 43%, 10%);
   color: #fff;
   display: flex;
