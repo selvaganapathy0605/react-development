@@ -4,11 +4,12 @@ import '../index.css'
 import { useState } from 'react';
 import Cart from './Cart';
 import { useEffect } from 'react';
+import data from '../../data.json'
 
 function ProfileCart() {
     const [active, setActive] = useState('daily');
 
-    const [data, setData] = useState([]);
+    const [datas] = useState(data);
 
     useEffect(() => {
         fetch('../data.json')
