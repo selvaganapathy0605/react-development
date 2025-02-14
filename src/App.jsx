@@ -6,14 +6,6 @@ import datas from '../data.json'
 
 
 function App() {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetch('../data.json')
-      .then((response) => response.json())
-      .then((json) => setData(json))
-      .catch((error) => console.error("Error loading JSON:", error));
-  }, []);
   return (
     <>
       <ProfileCart />
